@@ -1,0 +1,37 @@
+/* mapas     */
+@import "variables";
+
+$maparedes:(facebook: $colorfacebook ,instagram:$colorinstagram,twitter:$colortwitter);
+
+@each $red,$color in $maparedes {
+    .#{$red}--link{
+        color: $color;
+    }
+    
+}
+
+
+/*   MAP GET */
+
+
+$estilo:(
+    color:$colorletragneral,
+    tamfuente:18px,
+    margen:1rem,
+    alineacion:justify,
+
+);
+
+
+.paquetescontables{
+    color: map-get($estilo , color );
+    font-size: map-get($estilo, tamfuente );
+    margin: map-get($estilo, margen );
+    text-align: map-get($estilo, alineacion );
+    display: inline-flex;
+    div{
+        margin: map-get($estilo, margen );
+    }
+
+
+}

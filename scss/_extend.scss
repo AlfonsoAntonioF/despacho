@@ -1,0 +1,30 @@
+/* EXTEND  */
+
+
+
+.estilogeneral{
+    margin: 1rem;
+    padding: 3px;
+    text-align: justify;
+    font-size: medium;
+    color: $colorletragneral;
+    border-radius: 5px;
+    border-color: $colorprincipalrojo;
+    box-shadow: 8px 5px 5px $colorsecundariorojo;
+    background-color: white;
+
+}
+
+
+.paquetesfinancieros{
+    @extend .estilogeneral;
+    color: $colorprincipalrojo;
+
+    p{
+    font: 1em cursive;
+    color: $colorsecundariorojo;
+    }
+
+
+
+}

@@ -1,0 +1,33 @@
+/* mixin con parametros*/
+
+
+
+
+
+
+@mixin parrafos( $alineacion ,$color,$margen,$padd ,$borde ) {
+    
+    text-align: $alineacion;
+    
+    border-color: $color;
+    margin: $margen;
+    padding: $padd;
+    border-radius: $borde;
+
+    
+}
+.row{
+align-content: space-around;
+
+
+collage{
+    
+    display: inline-flex;
+    align-content: space-around;
+    img{
+        @include parrafos(center,$colorprincipalrojo,2rem,1rem,5px );/*verificar*/
+    }
+
+} 
+
+}
